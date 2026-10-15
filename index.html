@@ -4,24 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="شهرزاد زمانی | هوش مصنوعی، تولید محتوای علمی و زیبایی، بیوانفورماتیک و ایده‌پردازی محتوای دیجیتال">
-  <title>شهرزاد زمانی | AI Content & Innovation</title>
+  <meta name="theme-color" content="#fff8ef">
+  <meta name="description" content="شهرزاد زمانی | تولید محتوا، سناریونویسی و هوش مصنوعی برای کلینیک زیبایی آلیما">
+  <title>شهرزاد زمانی | متخصص هوش مصنوعی و ژنتیک پزشکی - کلینیک آلیما</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --cream: #fffaf2;
-      --cream-dark: #f5eadb;
-      --orange: #d97736;
-      --gold: #bd9148;
-      --brown: #39291f;
-      --text: #66564a;
-      --white: #ffffff;
+      --primary-orange: #d98245;
+      --secondary-orange: #f4c9a5;
+      --accent-rust: #a94f35;
+      --bg-cream: #fff8ef;
+      --bg-card: #ffffff;
+      --bg-soft: #f6e9dc;
+      --text-dark: #3c2922;
+      --text-muted: #78665c;
+      --border-soft: #ead5c3;
+      --footer-dark: #392720;
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Vazirmatn', sans-serif;
     }
 
     html {
@@ -29,327 +36,245 @@
     }
 
     body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: var(--cream);
-      color: var(--brown);
-      line-height: 1.9;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(1080px, 90%);
-      margin: auto;
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
+      line-height: 1.8;
+      overflow-x: hidden;
     }
 
     header {
-      padding: 22px 0;
-      border-bottom: 1px solid #eadcc9;
-      background: rgba(255, 250, 242, 0.95);
+      background: linear-gradient(135deg, #392720 0%, #704333 100%);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-      color: var(--orange);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover {
-      color: var(--orange);
-    }
-
-    .hero {
-      padding: 95px 0 80px;
-      background:
-        radial-gradient(circle at 15% 20%, #f4dfbd 0, transparent 32%),
-        linear-gradient(135deg, var(--cream), #fff2df);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      color: var(--orange);
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
+    .badge {
+      display: inline-block;
+      background: rgba(217, 130, 69, 0.17);
+      color: #f5c39a;
+      border: 1px solid #d98245;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: clamp(34px, 5vw, 54px);
-      line-height: 1.5;
-      margin-bottom: 18px;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #fffaf5;
+      font-weight: 800;
     }
 
-    h1 span {
-      color: var(--orange);
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #f0ded2;
+      margin-bottom: 30px;
+      font-weight: 300;
     }
 
-    .hero p {
-      color: var(--text);
-      font-size: 17px;
-      max-width: 650px;
-      margin-bottom: 25px;
-    }
-
-    .buttons {
+    .btn-group {
       display: flex;
-      gap: 12px;
+      gap: 15px;
+      justify-content: center;
       flex-wrap: wrap;
-      margin-top: 28px;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 23px;
+      padding: 12px 28px;
       border-radius: 8px;
-      font-weight: bold;
-      transition: 0.2s;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
     }
 
     .btn-primary {
-      background: var(--orange);
-      color: var(--white);
+      background: var(--primary-orange);
+      color: #2e1d15;
     }
 
     .btn-primary:hover {
-      background: #b95e27;
+      background: #eba875;
       transform: translateY(-2px);
     }
 
-    .btn-secondary {
-      border: 1px solid var(--gold);
-      color: var(--brown);
+    .btn-outline {
+      border: 1px solid #e7aa79;
+      color: #ffe0c5;
     }
 
-    .btn-secondary:hover {
-      background: var(--cream-dark);
+    .btn-outline:hover {
+      background: rgba(217, 130, 69, 0.15);
     }
 
-    .hero-card {
-      background: var(--white);
-      border: 1px solid #eedcc3;
-      border-radius: 20px;
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--text-dark);
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--primary-orange);
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .video-section {
+      background: var(--bg-card);
+      border-radius: 16px;
       padding: 30px;
-      box-shadow: 0 15px 45px rgba(79, 50, 22, 0.08);
+      box-shadow: 0 10px 30px rgba(90, 52, 30, 0.07);
+      margin-bottom: 60px;
+      border: 1px solid var(--border-soft);
     }
 
-    .hero-card .symbol {
-      font-size: 48px;
-      margin-bottom: 12px;
+    .video-container {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #211914;
+      margin-bottom: 20px;
     }
 
-    .hero-card h2 {
-      font-size: 21px;
-      margin-bottom: 10px;
+    video {
+      width: 100%;
+      display: block;
+      max-height: 500px;
+      object-fit: contain;
+      background: #211914;
     }
 
-    .hero-card p {
-      font-size: 14px;
-      margin: 0;
+    .video-description {
+      color: var(--text-muted);
+      line-height: 2;
     }
 
-    section {
-      padding: 75px 0;
+    .video-description strong {
+      color: var(--text-dark);
     }
 
-    .section-heading {
-      margin-bottom: 35px;
-      max-width: 700px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(26px, 4vw, 35px);
-      margin-bottom: 10px;
-    }
-
-    .section-heading p {
-      color: var(--text);
-    }
-
-    .about-grid,
-    .project-grid {
+    .grid-2 {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
     }
 
     .card {
-      background: var(--white);
-      border: 1px solid #eee0cd;
-      border-radius: 15px;
-      padding: 25px;
+      background: var(--bg-card);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 5px 15px rgba(90, 52, 30, 0.04);
     }
 
     .card h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
-      color: var(--brown);
-    }
-
-    .card p,
-    .card li {
-      color: var(--text);
-      font-size: 15px;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      border-bottom: 2px solid var(--secondary-orange);
+      padding-bottom: 8px;
     }
 
     .card ul {
-      padding-right: 20px;
-      margin-top: 10px;
+      list-style: none;
     }
 
     .card ul li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      position: relative;
+      padding-right: 20px;
     }
 
-    .skills {
-      background: var(--cream-dark);
+    .card ul li::before {
+      content: "✦";
+      position: absolute;
+      right: 0;
+      color: var(--accent-rust);
     }
 
-    .skill-list {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+    .cert-section {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 40px;
+      border: 1px solid var(--border-soft);
+      margin-bottom: 60px;
     }
 
-    .skill {
-      padding: 9px 15px;
-      background: var(--white);
-      border: 1px solid #e9d5b8;
-      border-radius: 30px;
-      font-size: 14px;
-    }
-
-    .project-card {
-      overflow: hidden;
-    }
-
-    .video-frame {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-      background: #211a16;
-      margin-bottom: 18px;
-      aspect-ratio: 16 / 9;
-      object-fit: contain;
-    }
-
-    .project-label {
-      color: var(--orange);
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    .workflow {
-      background: #493429;
-      color: var(--cream);
-    }
-
-    .workflow .section-heading p {
-      color: #ead9c5;
-    }
-
-    .workflow-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .workflow-item {
-      padding: 22px;
-      border: 1px solid #80634c;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.04);
-    }
-
-    .workflow-item .number {
-      color: #efb66e;
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .workflow-item h3 {
-      margin: 8px 0;
-      font-size: 17px;
-    }
-
-    .workflow-item p {
-      color: #ead9c5;
-      font-size: 14px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact p {
-      color: var(--text);
-      margin: 12px auto;
-      max-width: 650px;
-    }
-
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
+    .cert-section p {
+      color: var(--text-muted);
     }
 
     footer {
-      padding: 25px 0;
+      background: var(--footer-dark);
+      color: #fff5ec;
       text-align: center;
-      background: var(--cream-dark);
-      color: var(--text);
-      font-size: 13px;
+      padding: 40px 20px;
+      margin-top: 60px;
     }
 
-    @media (max-width: 760px) {
-      .hero {
-        padding: 60px 0;
+    footer a {
+      color: #f3b27e;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffdab9;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 60px 18px;
       }
 
-      .hero-grid,
-      .about-grid,
-      .project-grid,
-      .workflow-grid {
-        grid-template-columns: 1fr;
+      h1 {
+        font-size: 2.1rem;
       }
 
-      .hero-grid {
-        gap: 28px;
+      p.subtitle {
+        font-size: 1rem;
       }
 
-      .nav-links {
-        gap: 12px;
+      .container {
+        padding: 40px 16px;
       }
 
-      section {
-        padding: 55px 0;
+      .section-title {
+        font-size: 1.55rem;
+      }
+
+      .video-section,
+      .cert-section {
+        padding: 20px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .btn {
+        padding: 11px 20px;
       }
     }
   </style>
@@ -358,221 +283,126 @@
 <body>
 
   <header>
-    <div class="container">
-      <nav>
-        <a class="logo" href="#home">Shahrzad Zamani</a>
+    <div class="header-content">
+      <span class="badge">پیشنهاد همکاری اختصاصی برای کلینیک آلیما</span>
 
-        <div class="nav-links">
-          <a href="#about">درباره من</a>
-          <a href="#skills">مهارت‌ها</a>
-          <a href="#projects">نمونه‌کارها</a>
-          <a href="#contact">ارتباط</a>
-        </div>
-      </nav>
+      <h1>شهرزاد زمانی</h1>
+
+      <p class="subtitle">
+        ارشد ژنتیک پزشکی | متخصص تولید محتوا، سناریونویسی و اتوماسیون با هوش مصنوعی
+      </p>
+
+      <div class="btn-group">
+        <a href="tel:09362786478" class="btn btn-primary">
+          تماس: ۰۹۳۶۲۷۸۶۴۷۸
+        </a>
+
+        <a href="https://github.com/shahrzadzamani390-web"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-outline">
+          مشاهده گیت‌هاب
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">SCIENCE × AI × CREATIVE CONTENT</div>
+    <div class="container">
 
-          <h1>
-            علم را به محتوای<br>
-            <span>خلاقانه و قابل‌فهم</span><br>
-            تبدیل می‌کنم.
-          </h1>
+      <section class="video-section">
+        <h2 class="section-title">
+          نمونه انیمیشن اختصاصی: فیبروبلاست و کلاژن‌سازی
+        </h2>
 
-          <p>
-            من شهرزاد زمانی هستم؛ دانشجوی کارشناسی ارشد ژنتیک پزشکی،
-            با تجربه در هنر، پژوهش زیستی و تولید محتوای تصویری.
-            علاقه‌مندم از هوش مصنوعی برای خلق محتوای علمی و زیبایی،
-            توسعه ایده‌های دیجیتال و بهبود فرایندهای تولید محتوا استفاده کنم.
-          </p>
-
-          <div class="buttons">
-            <a class="btn btn-primary" href="#projects">مشاهده نمونه‌کارها</a>
-            <a class="btn btn-secondary" href="#contact">ارتباط با من</a>
-          </div>
+        <div class="video-container">
+          <video controls playsinline preload="metadata">
+            <source src="fibroblast-collagen.mp4" type="video/mp4">
+            مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+          </video>
         </div>
 
-        <div class="hero-card">
-          <div class="symbol">✳</div>
-          <h2>ترکیب علم و خلاقیت</h2>
-          <p>
-            از درک فرایندهای زیستی تا طراحی روایت‌های بصری؛
-            هدفم ساخت محتوایی است که هم جذاب باشد و هم پشتوانه علمی داشته باشد.
-          </p>
+        <p class="video-description">
+          <strong>توضیح سناریو و ساخت:</strong>
+          این انیمیشن با تلفیق دانش ژنتیک پزشکی در حوزه پیری پوست،
+          ایده‌پردازی و ابزار تولید ویدیوی هوش مصنوعی Kling AI ساخته شده است.
+          هدف، تبدیل یک مفهوم زیستی به محتوای بصری جذاب و قابل‌فهم
+          برای مخاطبان حوزه زیبایی و مراقبت از پوست است.
+        </p>
+      </section>
+
+      <div class="grid-2">
+
+        <div class="card">
+          <h3>🧬 تخصص ژنتیک و پیری پوست</h3>
+          <ul>
+            <li>دانش کارشناسی ارشد ژنتیک پزشکی با تمرکز پژوهشی بر فرآیندهای پیری پوست</li>
+            <li>آشنایی با فرآیندهای زیستی مرتبط با پوست و جوانسازی</li>
+            <li>تبدیل مفاهیم پیچیده پزشکی به سناریوهای جذاب برای عموم</li>
+          </ul>
         </div>
+
+        <div class="card">
+          <h3>🤖 هوش مصنوعی و اتوماسیون</h3>
+          <ul>
+            <li>استفاده از ChatGPT، Gemini و Claude برای ایده‌پردازی و سناریونویسی</li>
+            <li>تولید محتوای تصویری و ویدیویی با ابزارهای هوش مصنوعی</li>
+            <li>یادگیری و توسعه گردش‌کارهای خودکار تولید محتوا با ابزارهایی مانند n8n، Make و Zapier</li>
+            <li>بررسی ایده‌های بازاریابی اینستاگرام و بهبود محتوای شبکه‌های اجتماعی</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>📸 سناریونویسی، عکاسی و ویدیو</h3>
+          <ul>
+            <li>پیشینه هنری و تجربه فعالیت در حوزه هنرهای تجسمی</li>
+            <li>ایده‌پردازی و سناریونویسی برای محتوای تبلیغاتی و ویدیوهای کوتاه</li>
+            <li>طراحی روایت بصری و استفاده از هوک برای جلب توجه مخاطب</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>💻 برنامه‌نویسی و گیت‌هاب</h3>
+          <ul>
+            <li>آشنایی با برنامه‌نویسی و توسعه وب با کمک ابزارهای هوش مصنوعی</li>
+            <li>استفاده از GitHub برای مدیریت و انتشار پروژه‌ها</li>
+            <li>ترکیب دانش تحلیل داده و تفکر ساختاریافته با ایده‌پردازی دیجیتال</li>
+          </ul>
+        </div>
+
       </div>
-    </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">ABOUT ME</div>
-          <h2>درباره من</h2>
-          <p>
-            پیشینه من در زیست‌شناسی، ژنتیک و هنر به من کمک می‌کند
-            موضوعات پیچیده را با نگاهی علمی و خلاقانه به ایده‌های محتوایی تبدیل کنم.
-          </p>
-        </div>
+      <section class="cert-section">
+        <h2 class="section-title">گواهینامه نمایشگاه عکاسی</h2>
 
-        <div class="about-grid">
-          <div class="card">
-            <h3>پیشینه علمی</h3>
-            <p>
-              دانشجوی کارشناسی ارشد Medical Biology & Genetics در
-              Near East University، با تجربه کار روی داده‌های RNA-seq
-              و تحلیل داده‌های زیستی با R.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>هنر و ارتباطات بصری</h3>
-            <p>
-              هنرمند تجسمی با تجربه برگزاری کارگاه‌ها و مشارکت در نمایشگاه‌ها.
-              به ترکیب تصویر، داستان‌گویی و مفاهیم علمی برای ایجاد محتوای معنادار علاقه دارم.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">SKILLS</div>
-          <h2>مهارت‌ها و حوزه‌های تمرکز</h2>
-          <p>
-            مهارت‌های علمی و خلاقانه‌ای که می‌توانند در تولید محتوای
-            سلامت، زیبایی و مراقبت از پوست به کار گرفته شوند.
-          </p>
-        </div>
-
-        <div class="skill-list">
-          <span class="skill">AI-assisted Content Creation</span>
-          <span class="skill">Prompt Writing</span>
-          <span class="skill">Scientific Storytelling</span>
-          <span class="skill">AI Image & Video Concepts</span>
-          <span class="skill">Instagram Content Ideas</span>
-          <span class="skill">Biology & Medical Genetics</span>
-          <span class="skill">RNA-seq Analysis with R</span>
-          <span class="skill">Visual Arts & Design</span>
-          <span class="skill">Research & Trend Exploration</span>
-          <span class="skill">PowerPoint Presentations</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">SELECTED WORK</div>
-          <h2>نمونه‌کارها</h2>
-          <p>
-            نمونه‌ای از رویکرد من به ارتباط علم و تصویر،
-            با تمرکز بر مفاهیم زیستی و کاربردهای آن‌ها در محتوای زیبایی.
-          </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="card project-card">
-            <video class="video-frame" controls playsinline preload="metadata">
-              <source src="fibroblast-collagen.mp4" type="video/mp4">
-              مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
-            </video>
-
-            <div class="project-label">AI VISUAL CONCEPT</div>
-            <h3>فیبروبلاست و تولید کلاژن</h3>
-            <p>
-              یک نمونه محتوای تصویری با موضوع زیست‌شناسی پوست؛
-              مناسب برای توسعه ایده‌های آموزشی درباره کلاژن،
-              ساختار پوست و فرایندهای مرتبط با پیری پوست.
-            </p>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-label">CONTENT STRATEGY CONCEPT</div>
-            <h3>ایده‌پردازی محتوای علمی و زیبایی</h3>
-            <p>
-              تبدیل یک موضوع علمی به محتوای کوتاه و قابل‌فهم برای شبکه‌های اجتماعی؛
-              از انتخاب پیام اصلی و نوشتن سناریو تا پیشنهاد تصویر و ساختار انتشار.
-            </p>
-            <ul>
-              <li>انتخاب موضوع بر اساس نیاز مخاطب</li>
-              <li>ساده‌سازی مفاهیم علمی</li>
-              <li>پیشنهاد ایده برای پست و ویدئوی کوتاه</li>
-              <li>توجه به دقت علمی و پرهیز از ادعاهای درمانی تأییدنشده</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="workflow">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">MY APPROACH</div>
-          <h2>چطور به یک پروژه محتوا نزدیک می‌شوم</h2>
-          <p>
-            یک چارچوب پیشنهادی برای تبدیل نیازهای یک برند زیبایی
-            به محتوای منظم، جذاب و قابل ارزیابی.
-          </p>
-        </div>
-
-        <div class="workflow-grid">
-          <div class="workflow-item">
-            <div class="number">01</div>
-            <h3>تحقیق و شناخت مخاطب</h3>
-            <p>
-              بررسی پرسش‌های مخاطبان، موضوعات مرتبط و نمونه‌های محتوایی رقبا.
-            </p>
-          </div>
-
-          <div class="workflow-item">
-            <div class="number">02</div>
-            <h3>طراحی و تولید</h3>
-            <p>
-              توسعه ایده، نگارش سناریو و استفاده هدفمند از ابزارهای هوش مصنوعی
-              برای کمک به تولید محتوای بصری و متنی.
-            </p>
-          </div>
-
-          <div class="workflow-item">
-            <div class="number">03</div>
-            <h3>ارزیابی و بهبود</h3>
-            <p>
-              بررسی بازخورد و شاخص‌های عملکرد محتوا و استفاده از نتایج
-              برای اصلاح ایده‌های بعدی.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="eyebrow">LET'S CONNECT</div>
-        <h2>برای همکاری آماده‌ام</h2>
-        <p>
-          علاقه‌مند به همکاری در زمینه تولید محتوای مبتنی بر هوش مصنوعی،
-          ارتباطات علمی و پروژه‌های خلاقانه در حوزه زیبایی و سلامت هستم.
+        <p style="text-align: center; margin-bottom: 15px;">
+          <strong>Exhibition Title:</strong>
+          Beneath the Layers: Cyprus
         </p>
 
-        <div class="contact-links">
-          <a class="btn btn-primary" href="tel:09362786478">تماس با من</a>
-          <a class="btn btn-secondary"
-             href="https://github.com/shahrzadzamani390-web"
-             target="_blank" rel="noopener noreferrer">پروفایل GitHub</a>
-        </div>
-      </div>
-    </section>
+        <p style="text-align: center;">
+          گواهینامه شرکت در نمایشگاه گروهی عکاسی در گالری
+          Rüstem Bookshop، نیکوزیا — مارس ۲۰۲۵
+        </p>
+      </section>
+
+    </div>
   </main>
 
   <footer>
-    © 2026 Shahrzad Zamani — AI, Science & Creative Content
+    <p>پورتفولیوی اختصاصی شهرزاد زمانی | پیشنهاد همکاری با کلینیک زیبایی آلیما</p>
+
+    <p style="margin-top: 10px;">
+      <a href="https://github.com/shahrzadzamani390-web"
+         target="_blank"
+         rel="noopener noreferrer">
+        github.com/shahrzadzamani390-web
+      </a>
+    </p>
+
+    <p style="margin-top: 8px; color: #d9c3b5; font-size: 0.9rem;">
+      ۰۹۳۶۲۷۸۶۴۷۸
+    </p>
   </footer>
 
 </body>
