@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fff8ef">
+  <meta name="theme-color" content="#FFF5EE">
   <meta name="description" content="شهرزاد زمانی | تولید محتوا، سناریونویسی و هوش مصنوعی برای کلینیک زیبایی آلیما">
   <title>شهرزاد زمانی | متخصص هوش مصنوعی و ژنتیک پزشکی - کلینیک آلیما</title>
 
@@ -12,16 +12,16 @@
 
   <style>
     :root {
-      --primary-orange: #d98245;
-      --secondary-orange: #f4c9a5;
-      --accent-rust: #a94f35;
-      --bg-cream: #fff8ef;
-      --bg-card: #ffffff;
-      --bg-soft: #f6e9dc;
-      --text-dark: #3c2922;
-      --text-muted: #78665c;
-      --border-soft: #ead5c3;
-      --footer-dark: #392720;
+      --primary-orange: #F28C5B;
+      --secondary-orange: #F6B5A5;
+      --accent-rust: #D96C4F;
+      --bg-cream: #FFF5EE;
+      --bg-card: #FFFFFF;
+      --bg-soft: #FCE5DA;
+      --text-dark: #40313A;
+      --text-muted: #796671;
+      --border-soft: #F0D3C8;
+      --footer-dark: #40313A;
     }
 
     * {
@@ -43,7 +43,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #392720 0%, #704333 100%);
+      background: linear-gradient(135deg, #40313A 0%, #C96E62 100%);
       color: #fff;
       padding: 80px 20px;
       text-align: center;
@@ -57,9 +57,9 @@
 
     .badge {
       display: inline-block;
-      background: rgba(217, 130, 69, 0.17);
-      color: #f5c39a;
-      border: 1px solid #d98245;
+      background: rgba(246, 181, 165, 0.16);
+      color: #FFE0D5;
+      border: 1px solid var(--secondary-orange);
       padding: 6px 16px;
       border-radius: 20px;
       font-size: 0.9rem;
@@ -69,13 +69,13 @@
     h1 {
       font-size: 2.8rem;
       margin-bottom: 15px;
-      color: #fffaf5;
+      color: #FFFAF7;
       font-weight: 800;
     }
 
     p.subtitle {
       font-size: 1.2rem;
-      color: #f0ded2;
+      color: #FFE9E0;
       margin-bottom: 30px;
       font-weight: 300;
     }
@@ -98,21 +98,21 @@
 
     .btn-primary {
       background: var(--primary-orange);
-      color: #2e1d15;
+      color: #352630;
     }
 
     .btn-primary:hover {
-      background: #eba875;
+      background: #F6A77F;
       transform: translateY(-2px);
     }
 
     .btn-outline {
-      border: 1px solid #e7aa79;
-      color: #ffe0c5;
+      border: 1px solid var(--secondary-orange);
+      color: #FFE0D5;
     }
 
     .btn-outline:hover {
-      background: rgba(217, 130, 69, 0.15);
+      background: rgba(246, 181, 165, 0.15);
     }
 
     .container {
@@ -143,7 +143,7 @@
       background: var(--bg-card);
       border-radius: 16px;
       padding: 30px;
-      box-shadow: 0 10px 30px rgba(90, 52, 30, 0.07);
+      box-shadow: 0 10px 30px rgba(100, 60, 70, 0.07);
       margin-bottom: 60px;
       border: 1px solid var(--border-soft);
     }
@@ -152,7 +152,7 @@
       width: 100%;
       border-radius: 12px;
       overflow: hidden;
-      background: #211914;
+      background: #29232A;
       margin-bottom: 20px;
     }
 
@@ -161,7 +161,7 @@
       display: block;
       max-height: 500px;
       object-fit: contain;
-      background: #211914;
+      background: #29232A;
     }
 
     .video-description {
@@ -185,7 +185,13 @@
       padding: 30px;
       border-radius: 12px;
       border: 1px solid var(--border-soft);
-      box-shadow: 0 5px 15px rgba(90, 52, 30, 0.04);
+      box-shadow: 0 5px 15px rgba(100, 60, 70, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(100, 60, 70, 0.08);
     }
 
     .card h3 {
@@ -227,19 +233,19 @@
 
     footer {
       background: var(--footer-dark);
-      color: #fff5ec;
+      color: #FFF5EE;
       text-align: center;
       padding: 40px 20px;
       margin-top: 60px;
     }
 
     footer a {
-      color: #f3b27e;
+      color: #F6B5A5;
       text-decoration: none;
     }
 
     footer a:hover {
-      color: #ffdab9;
+      color: #FFD9C9;
       text-decoration: underline;
     }
 
@@ -317,7 +323,7 @@
 
         <div class="video-container">
           <video controls playsinline preload="metadata">
-            <source src="fibroblast-collagen.mp4" type="video/mp4">
+            <source src="fibroblast-collagen.mp4.mp4" type="video/mp4">
             مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
           </video>
         </div>
@@ -400,7 +406,7 @@
       </a>
     </p>
 
-    <p style="margin-top: 8px; color: #d9c3b5; font-size: 0.9rem;">
+    <p style="margin-top: 8px; color: #E6D4D8; font-size: 0.9rem;">
       ۰۹۳۶۲۷۸۶۴۷۸
     </p>
   </footer>
